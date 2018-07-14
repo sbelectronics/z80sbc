@@ -1,0 +1,24 @@
+name z80sbc-2;
+device g16v8;
+partno x;
+date 1/1/1980;
+designer smbaker;
+company sbsoftware;
+revision 1;
+assembly x;
+location x;
+
+ORDER: IOREQ, RD, A1, A2, A3, A4, A5, A6, A7, M1, !KCS1, !PGREGCS;
+
+VECTORS:   0   0   0   0   0   0   0   0   0   1      L         H
+           0   0   0   0   0   0   0   0   0   0      H         H
+           1   0   0   0   0   0   0   0   0   1      H         H
+           0   1   0   0   0   0   0   0   0   1      H         H
+           0   0   0   0   0   1   1   1   1   1      H         L
+           0   0   1   0   0   1   1   1   1   1      H         L
+           0   0   0   1   0   1   1   1   1   1      H         L
+           0   0   1   1   0   1   1   1   1   1      H         L
+           0   1   0   0   0   1   1   1   1   1      H         L
+           0   1   1   0   0   1   1   1   1   1      H         L
+           0   1   0   1   0   1   1   1   1   1      H         L
+           0   1   1   1   0   1   1   1   1   1      H         L
