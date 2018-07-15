@@ -1,9 +1,13 @@
 10 REM all digits on
 20 OUT &H0A, 0
-30 A1=0
-40 A2=0
-50 S1=1
-60 S2=1
+30 REM initialize counters and speeds
+40 A1=0
+50 A2=0
+60 S1=1
+70 S2=1
+80 REM middle decimal point on
+90 OUT &H08,(&HFF - &H10)
+
 
 100 GOSUB 5000
 110 GOSUB 6000
@@ -12,16 +16,20 @@
 140 GOTO 100
 
 5000 REM query buttons for speed setting
-5010 B=INP(&H0)
-5020 IF (B and 8)=0 THEN S1=0
-5030 IF (B and 4)=0 THEN S1=1
-5040 IF (B and 2)=0 THEN S1=4
-5050 IF (B and 1)=0 THEN S1=16
-5060 IF (B and &H80)=0 THEN S2=0
-5070 IF (B and &H40)=0 THEN S2=1
-5080 IF (B and &H20)=0 THEN S2=4
-5090 IF (B and &H10)=0 THEN S2=16
-5100 RETURN
+5010 B1=INP(&H0)
+5012 B2=INP(&H2)
+5014 B3=INP(&H4)
+5020 IF (B1 and &H08)=0 THEN S1=0
+5030 IF (B1 and &H80)=0 THEN S1=1
+5040 IF (B2 and &H08)=0 THEN S1=4
+5050 IF (B2 and &H80)=0 THEN S1=16
+5060 IF (B3 and &H08)=0 THEN S1=64
+5070 IF (B1 and &H01)=0 THEN S2=0
+5080 IF (B1 and &H10)=0 THEN S2=1
+5090 IF (B2 and &H01)=0 THEN S2=4
+5100 IF (B2 and &H10)=0 THEN S2=16
+5110 IF (B3 and &H01)=0 THEN S2=64
+5120 RETURN
 
 6000 REM display both counters
 6010 X=A1
