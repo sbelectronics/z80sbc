@@ -24,7 +24,7 @@ As the Z80 is only able to address 64KB or memory, the RAM and ROM are banked. T
 
 The following github repositories will be useful:
 
-* [TODO: link], project website
+* [http://www.smbaker.com/scotts-z80sbc-z80-single-board-computer](http://www.smbaker.com/scotts-z80sbc-z80-single-board-computer), project website
 * [https://github.com/sbelectronics/z80sbc](https://github.com/sbelectronics/z80sbc), Scott's Z80SBC repository containing schematics, code for the programmable logic devices, etc.
 * [https://github.com/sbelectronics/RomWBW](https://github.com/sbelectronics/RomWBW), my fork of the RomWBW CP/M distribution.
 
@@ -32,7 +32,7 @@ The following github repositories will be useful:
 
 The schematics are available in the schematics directory for the github repo.
 
-* Schematic revision 0.20 [TODO: Link]
+* [Schematic revision 0.20](https://github.com/sbelectronics/z80sbc/blob/master/schematics/z80sbc-0.20.pdf)
 
 ## Acknowledgments
 
