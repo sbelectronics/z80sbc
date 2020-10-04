@@ -34,6 +34,22 @@ The schematics are available in the schematics directory for the github repo.
 
 * [Schematic revision 0.20](https://github.com/sbelectronics/z80sbc/blob/master/schematics/z80sbc-0.20.pdf)
 
+## Gerbers
+
+The gerbers are available in the gerbers directory for the github repo.
+
+* [Gerbers revision 0.20](https://github.com/sbelectronics/z80sbc/blob/master/gerbers/)
+
+Zip up all of the files in this directory, upload them to JLCPCB, and you should be able to fabricate five
+boards for around fifty bucks. Please do read the LICENSE agreement contained in this repository for
+licensing requirements, and please do consider a donation to support the work that went into 
+producing this pcboard.
+
+Note that the board design has not been tested beyond what I did in the original video; I can't guarantee
+that all features work as expected. I do plan on putting some more work into this project, but I've also
+had several requests for boards, and making the gerbers available does sound like the easiest way to
+get some boards into some peoples' hands.
+
 ## Acknowledgments
 
 Sergey Kiselev's Zeta-2 Single Board computer was used as the inspiration for several parts of this designed, including the banked memory scheme. 
