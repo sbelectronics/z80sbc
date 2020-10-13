@@ -50,6 +50,15 @@ that all features work as expected. I do plan on putting some more work into thi
 had several requests for boards, and making the gerbers available does sound like the easiest way to
 get some boards into some peoples' hands.
 
+
+## Rom Images
+
+* z80sbc-romwbw-10122020.BIN ... This is the ROM image I found in my assembled z80sbc in October of 2020. It appears to be my fork of Wayne Warchen's ROMWBW distribution. This has been sitting on the shelf for a while, and I'm unsure the status the last time I used it.
+
+** PLD Images
+
+I've checked what I believe to be the correct JED files for the PLDs into the pld-galasm directory.
+
 ## Acknowledgments
 
 Sergey Kiselev's Zeta-2 Single Board computer was used as the inspiration for several parts of this designed, including the banked memory scheme. 
